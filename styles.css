@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', cursive, sans-serif;
+    font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', 'Trebuchet MS', 'Verdana', cursive, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     padding: 20px;

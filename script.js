@@ -178,9 +178,12 @@ function numberToWord(num) {
     return words[num] || num;
 }
 
+// Spanish alphabet constant
+const SPANISH_ALPHABET = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'.split('');
+
 // Alphabet Activity
 function loadAlphabetActivity(container) {
-    const alphabet = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'.split('');
+    const alphabet = SPANISH_ALPHABET;
     let currentIndex = 0;
     
     container.innerHTML = `
@@ -224,7 +227,7 @@ function getWordForLetter(letter) {
         'F': 'Flor', 'G': 'Gato', 'H': 'Helado', 'I': 'Iglú', 'J': 'Jirafa',
         'K': 'Kiwi', 'L': 'Luna', 'M': 'Mono', 'N': 'Nube', 'Ñ': 'Ñandú',
         'O': 'Oso', 'P': 'Pato', 'Q': 'Queso', 'R': 'Rana', 'S': 'Sol',
-        'T': 'Tigre', 'U': 'Uva', 'V': 'Vaca', 'W': 'Water', 'X': 'Xilófono',
+        'T': 'Tigre', 'U': 'Uva', 'V': 'Vaca', 'W': 'Wafle', 'X': 'Xilófono',
         'Y': 'Yate', 'Z': 'Zapato'
     };
     return examples[letter] || letter;
