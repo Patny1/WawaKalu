@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WawaKalu - Aprende y Juega</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 WawaKalu 🌟</h1>
+            <p class="subtitle">¡Aprende y Juega!</p>
+        </header>
+
+        <main>
+            <section class="welcome-section">
+                <h2>¡Bienvenidos Niñas y Niños! 👋</h2>
+                <p>Este es un espacio especial para aprender, jugar y crear juntos.</p>
+            </section>
+
+            <section class="activities-section">
+                <h2>Actividades Divertidas 🎉</h2>
+                
+                <div class="activity-cards">
+                    <div class="card" id="color-card">
+                        <h3>🎨 Colorea</h3>
+                        <p>Dibuja y pinta con muchos colores</p>
+                        <button onclick="openActivity('coloring')">¡Jugar!</button>
+                    </div>
+
+                    <div class="card" id="numbers-card">
+                        <h3>🔢 Números</h3>
+                        <p>Aprende a contar de manera divertida</p>
+                        <button onclick="openActivity('numbers')">¡Aprender!</button>
+                    </div>
+
+                    <div class="card" id="abc-card">
+                        <h3>🔤 ABC</h3>
+                        <p>Descubre las letras del alfabeto</p>
+                        <button onclick="openActivity('alphabet')">¡Explorar!</button>
+                    </div>
+
+                    <div class="card" id="shapes-card">
+                        <h3>⭐ Formas</h3>
+                        <p>Conoce círculos, cuadrados y más</p>
+                        <button onclick="openActivity('shapes')">¡Descubrir!</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-area" id="activity-area" style="display: none;">
+                <button class="back-button" onclick="closeActivity()">← Volver</button>
+                <div id="activity-content"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>💖 Construido de manera colaborativa con amor 💖</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
