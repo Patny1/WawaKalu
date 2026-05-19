@@ -10,6 +10,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final items = [
+      _HomeItem('CPS', Icons.videogame_asset, const JuegoPage()),
       _HomeItem('Juegos', Icons.videogame_asset, const JuegoPage()),
       _HomeItem('Nutrición', Icons.restaurant_menu, const NutricionPage()),
       _HomeItem('Lenguaje y comunicación', Icons.record_voice_over, const LenguajePage()),
